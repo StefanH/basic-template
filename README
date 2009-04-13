@@ -1,0 +1,8 @@
+= Basic Template
+
+includes: JQuery, http://jquery.com/
+also includes: famfamfam's silk icons, http://www.famfamfam.com/lab/icons/silk/
+
+A Basic template to be used in conjunction with micro-framework
+
+Copyright (c) 2009 Stefan Henzen, released under the MIT license

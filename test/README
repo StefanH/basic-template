@@ -1,0 +1,26 @@
+= Tests
+
+The test runner is simply a php script run from the terminal that performs some
+tasks normally performed by users of your application. It can be configured
+to use an alternate database.
+
+There are several tests included in micro framework to test the framework itself.
+These can be run by adding a test_table to your database and altering test_config.php
+to include these tests.
+
+== Getting started
+
+ * configure the test database and include some tests in test/test_config.php
+ * php -f scripts/run_test.php.
+
+== The framework test
+
+For the model test to pass, you need a table called test_table in your test database. 
+To create this, run the following sql on your database:
+
+CREATE TABLE IF NOT EXISTS `test_table` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(120) NOT NULL,
+  `name2` varchar(120) NOT NULL,
+  PRIMARY KEY  (`id`)
+)

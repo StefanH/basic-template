@@ -1,0 +1,116 @@
+/* GENERAL
+1F332D	- sitename
+89B287	- head
+C3D9BB	- content
+3A5438	- links, background
+B1C99A	- table headers, lines
+*/
+body {
+	font-size:10pt;
+	font-family:arial;
+	margin:0;
+	padding:0;	
+	background: #3A5438;
+}
+
+body * {
+	margin:0;
+	padding:0;
+}
+
+a {
+	color: #1F332D;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 10px;
+	border:1px solid #B1C99A;
+}
+
+th{
+	background: #B1C99A;
+	padding: 4px;
+	text-align: left;
+}
+
+td{
+	padding: 4px;
+	vertical-align: top;
+	border-bottom:1px solid #B1C99A;
+}
+
+form{
+	margin: 10px;
+}
+form p{
+	min-height: 30px;
+}
+form label{
+	width: 120px;
+	padding-right: 5px;
+	text-align: right;
+	float: left;
+}
+form select, form input{
+	float: left;
+}
+form input.submit{
+	float: none;
+	margin-left: 10px;
+}
+form span.error{
+	color: #B22C34;
+	float: left;
+	padding-left: 5px;
+}
+/* alternative style for textarea */
+form p.textarea label{
+	margin-left:10px;
+	float: none;	
+	text-align: left;
+}
+form p.textarea textarea{
+	display: block;
+	margin: 0 0 10px 10px;
+}
+form p.textarea span.error{
+	float: none;
+	padding-left: 0;
+}
+
+#errors {
+	color: #B22C34;
+}
+#flash {
+	color: #239953;
+}
+
+/* MASTHEAD */
+#masthead{
+	padding: 10px;
+	text-align: center;
+	background: #89B287;	
+}
+
+#sitename{
+	color: #1F332D;		
+} 
+
+
+/* CONTENT*/
+
+#content {
+	position:relative;
+	margin: 10px auto;
+	background: #C3D9BB;
+	padding: 10px;
+	width: 600px;
+	text-align: left;
+}
+
